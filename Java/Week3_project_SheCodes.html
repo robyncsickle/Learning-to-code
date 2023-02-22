@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plants</title>
+    <style>
+      body {
+        background: linear-gradient(45deg, #132a13, #31572c, #4f772d, #90a955);
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 48px;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        color: #ecf39e;
+        text-align: center;
+      }
+      h2 {
+        color: #ef9f00;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 4px;
+      }
+      p {
+        color: #ecf39e;
+        font-size: 25px;
+        text-align: center;
+      }
+      a {
+        color: #ecf39e;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #ef9f00;
+      }
+      button {
+        background-color: #132a13;
+        color: #ef9f00;
+        font-weight: bold;
+        display: block;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 25px;
+        box-shadow: 12px 12px 2px 1px rgba(239, 159, 0, 0.466);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: #132a13;
+        background: #ef9f00;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Green Space</h1>
+      <span><h2>Bedroom Plants</h2></span>
+
+      <hr />
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/649/original/plant-guide-1663941701.jpg?1677069232"
+      />
+
+      <hr />
+      <p>
+        <em>
+          Plants to your bedroom can improve your sleep, boost your mood,
+          enhance your creativity, reduce your stress levels, increase your
+          productivity, naturally filter air pollutants</em
+        >
+      </p>
+      <br />
+      <a href="https://plantinfo.co.za/"><strong> More information </strong></a>
+      <button>Get yourself a plant now!</button>
+    </div>
+    <script>
+      function getPlant() {
+        let name = prompt("What is your name?");
+        let plant = prompt("Do you want a bedroom plant?");
+
+        plant = plant.toLowerCase().trim();
+
+        if (plant == "yes") {
+          alert("Thanks, " + name + " we will be in touch soon");
+        } else {
+          alert(
+            "Okay " +
+              name +
+              " click on more information to know why you need a plant"
+          );
+        }
+      }
+
+      let wantAPlant = document.querySelector("button");
+      wantAPlant.addEventListener("click", getPlant);
+    </script>
+  </body>
+</html>
