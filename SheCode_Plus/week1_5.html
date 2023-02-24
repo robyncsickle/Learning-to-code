@@ -42,7 +42,7 @@
         color: #fff;
         font-size: 16px;
         display: block;
-        margin: 60px auto;
+        margin: 0 auto;
         line-height: 22px;
         padding: 16px 24px;
         text-decoration: none;
@@ -54,23 +54,41 @@
         cursor: pointer;
         background: #5e41a7;
       }
+
+      .limited-spots {
+        font-weight: bold;
+      }
+
+      .button-container {
+        margin: 60px 0;
+      }
+      #section-1 {
+        font-size: 20px;
+      }
+      footer button {
+        color: black;
+      }
+      section p {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
-    <div>
-      <header>
-        <h1>👩‍💻 SheCodes is a Coding Workshop for Women</h1>
-        <h2>Access a new career in Technology</h2>
-      </header>
-      <section>
-        <p>
-          SheCodes teaches coding, design and management skills to women
-          <br />
-          <span><strong> Limited number of spots available! </strong></span>
-        </p>
+    <header>
+      <h1>👩‍💻 SheCodes is a Coding Workshop for Women</h1>
+      <h2>Access a new career in Technology</h2>
+    </header>
+    <section id="section-1">
+      <p>
+        SheCodes teaches coding, design and management skills to women
+        <br />
+        <span class="limited-spots"> Limited number of spots available! </span>
+      </p>
+    </section>
+    <footer">
+      <div class="button-container">
         <button>Join now</button>
-      </section>
-    </div>
-    <footer></footer>
+      </div>
+    </footer>
   </body>
 </html>
