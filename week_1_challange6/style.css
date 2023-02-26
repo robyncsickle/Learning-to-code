@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SheCodes</title>
-    <style>
-      body {
+ body {
         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
       }
 
@@ -71,24 +64,3 @@
       section p {
         font-weight: bold;
       }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>👩‍💻 SheCodes is a Coding Workshop for Women</h1>
-      <h2>Access a new career in Technology</h2>
-    </header>
-    <section id="section-1">
-      <p>
-        SheCodes teaches coding, design and management skills to women
-        <br />
-        <span class="limited-spots"> Limited number of spots available! </span>
-      </p>
-    </section>
-    <footer">
-      <div class="button-container">
-        <button>Join now</button>
-      </div>
-    </footer>
-  </body>
-</html>
