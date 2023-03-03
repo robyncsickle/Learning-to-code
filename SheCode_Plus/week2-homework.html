@@ -15,24 +15,66 @@
   </head>
   <body>
     <div class="container">
-      <h3>Weather in Cape Town now</h3>
-      <div class="city">
-        <h2>Cape Town</h2>
-        <p>Friday 20:00 Clear with periodic clouds</p>
-      </div>
-      <div class="current-weather">
-        <h1><span class="current-emoji">⛅</span> 20</h1>
+      <div class="weather-app">
+        <h3>Weather in Cape Town now</h3>
         <div class="row">
-          <div class="col">Temperature</div>
-          <div class="col">Preciotation</div>
-          <div class="col">Wind</div>
+          <div class="col-6 current-weather">
+            <p>
+              <span class="current-emoji">⛅</span>
+              <span class="temp"> 20</span> °C | °F
+            </p>
+            <ul>
+              <li><a href="#"> Temperature</a></li>
+              <li><a href="#">Precipitation </a></li>
+              <li><a href="#"> Wind</a></li>
+            </ul>
+          </div>
+          <div class="col-6 city">
+            <h2>Cape Town</h2>
+            <p>Friday 20:00 Clear with periodic clouds</p>
+          </div>
         </div>
-        <div class="fri">
-          <p>
-            Fri
-            <span class="week-emoji">⛅</span>
-            <span class="week-high">26°</span>
-          </p>
+        <div class="row upcoming">
+          <div class="col fri">
+            <p>
+              Fri
+              <span class="week-emoji">⛅</span>
+              26°
+              <span class="week-low">16°</span>
+            </p>
+          </div>
+          <div class="col sat">
+            <p>
+              Sat
+              <span class="week-emoji">☁</span>
+              22°
+              <span class="week-low">16°</span>
+            </p>
+          </div>
+          <div class="col sun">
+            <p>
+              Sun
+              <span class="week-emoji">☁</span>
+              26°
+              <span class="week-low">17°</span>
+            </p>
+          </div>
+          <div class="col mon">
+            <p>
+              Mon
+              <span class="week-emoji">☁</span>
+              26°
+              <span class="week-low">17°</span>
+            </p>
+          </div>
+          <div class="col tue">
+            <p>
+              Tue
+              <span class="week-emoji">☁</span>
+              24°
+              <span class="week-low">16°</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
