@@ -1,8 +1,9 @@
 function task3(num) {
   if (num % 2 === 0) {
-    return "Even";
+    return "even";
   } else {
-    return "Odd";
+    return "odd";
   }
 }
+
 module.exports = { task3 };

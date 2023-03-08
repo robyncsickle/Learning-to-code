@@ -5,5 +5,4 @@ function task2(name) {
     console.log("Hello " + name + " !");
   }
 }
-
-task2(Rob);
+module.exports = { task2 };
