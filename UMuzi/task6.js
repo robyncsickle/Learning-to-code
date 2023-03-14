@@ -1,5 +1,5 @@
 function task6() {
-  let ans = 0;
+  let ans = -Infinity;
 
   for (let i = 0; i < arguments.length; i++) {
     if (arguments[i] > ans) {
