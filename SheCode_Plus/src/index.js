@@ -26,8 +26,6 @@ let tokyoRoundTemp = Math.round(weather.tokyo.temp);
 let lisbonRoundTemp = Math.round(weather.lisbon.temp);
 let sanRoundTemp = Math.round(weather["san francisco"].temp);
 
-console.log(parisRoundTemp);
-
 let parisFahrenheit = parisRoundTemp * 1.8 + 32;
 let tokyoFahrenheit = tokyoRoundTemp * 1.8 + 32;
 let lisbonFahrenheit = lisbonRoundTemp * 1.8 + 32;
