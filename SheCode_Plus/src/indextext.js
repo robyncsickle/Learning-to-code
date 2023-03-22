@@ -24,12 +24,13 @@ let weather = {
 let cityName = prompt("Enter the city");
 cityName = cityName.toLocaleLowerCase();
 if (weather[cityName] !== undefined) {
-  let temperature = weather[cityName].temp;
-  temperature = Math.round(temperature);
+  let celciusTemperature = weather[cityName].temp;
+  celciusTemperature = Math.round(celciusTemperature);
+  let farenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   let humidity = weather[cityName].humidity;
 
   alert(
-    `It is currently ${temperature}°C in ${cityName} with humidity of ${humidity}%`
+    `It is currently ${celciusTemperature}°C ${farenheitTemperature} in ${cityName} with humidity of ${humidity}%`
   );
 } else {
   alert(

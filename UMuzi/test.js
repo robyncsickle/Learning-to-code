@@ -25,8 +25,7 @@ function printCommonLetters(str1, str2) {
 
   // Sort the common letters array alphabetically
   commonLetters.sort();
-  commonLetters.filter((char) => /^[a-z]+$/.test(char));
-
+  
   //check if there is a number
   for (let i = 0; i < commonLetters.length; i++) {
     if (!isNaN(commonLetters[i])) {

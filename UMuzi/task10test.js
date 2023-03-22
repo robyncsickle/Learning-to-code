@@ -1,53 +1,40 @@
-function task10(str1, str2) {
-  const lowercaseStr1 = str1.toLowerCase();
-  const lowercaseStr2 = str2.toLowerCase();
+function printCommonLetters(str1, str2) {
+  // convert strings to lowercase and remove special characters
+  str1 = str1.toLowerCase().replace(/[^a-z]/g, "");
+  str2 = str2.toLowerCase().replace(/[^a-z]/g, "");
 
-  let commonLetters = [];
-  for (let i = 0; i < lowercaseStr1.length; i++) {
-    // Check if the current letter is in the second string and has not already been added to the commonLetters array
-    if (
-      lowercaseStr2.includes(lowercaseStr1[i]) &&
-      !commonLetters.includes(lowercaseStr1[i])
-    ) {
-      // Add the current letter to the commonLetters array
-      commonLetters.push(lowercaseStr1[i]);
+  // initialize an empty array to hold common letters
+  var common = [];
+
+  // loop through each letter of str1
+  for (var i = 0; i < str1.length; i++) {
+    var letter = str1.charAt(i);
+
+    // check if the letter is in str2 and not already in common array
+    if (str2.indexOf(letter) !== -1 && common.indexOf(letter) === -1) {
+      common.push(letter);
     }
   }
 
-  const letters = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
-  ];
-  for (let i = 0; i < commonLetters.length; i++) {
-    if (letters.includes(commonLetters[i])) {
-      result.push(commonLetters[i]);
+  // check if there is a common number
+  for (var i = 0; i < common.length; i++) {
+    if (!isNaN(common[i])) {
+      return "no common letters";
     }
   }
-  console.log(commonLetters);
+
+  // join common letters with commas and spaces, with last letter joined by 'and'
+  var output = common.sort().join(", ");
+  var lastCommaIndex = output.lastIndexOf(",");
+  if (lastCommaIndex !== -1) {
+    output =
+      output.substring(0, lastCommaIndex) +
+      " and" +
+      output.substring(lastCommaIndex + 1);
+  }
+
+  // return output, or "no common letters" if there are no common letters or a common number
+  return common.length > 0 ? output : "no common letters";
 }
 
-console.log(task10("hey", "he"));
+
